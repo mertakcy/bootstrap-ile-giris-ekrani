@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .buton1hover:hover {
+      background-color: black;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a.text-light:hover {
+      color: white !important;
+    }
+
+    #cik:hover {
+      background-color: white;
+    }
+
+    .renk {
+      background-color: #E9ECEF;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body class="mx-auto">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-light" href="#">Bursa Uludağ Üniversitesi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">BUÜ Bilişim Kaynakları Kullanım Esasları</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Bilgimi Koruyorum ORG</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Ara..." aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Ara...</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-6 px-0">
+        <div class="border">
+          <h3 class="text-center mb-4">GİRİŞ - LOGIN</h3>
+          <div class="form-group">
+            <input type="text" id="email" class="form-control w-75 mx-auto mb-3" placeholder="e-mail kullanıcı adı">
+            <input type="password" id="password" class="form-control w-75 mx-auto" placeholder="şifre">
+            <p class="ml-5 mb-2 mt-3 pl-3 ">Oturum Açmak İstediğiniz Süre</p>
+    
+            <select id="oturum" class="custom-select w-75 mx-auto mb-4 d-block">
+              <option value="0">1 Saat (60 Dakika)</option>
+              <option value="0">2 Saat (120 Dakika)</option>
+              <option value="0">4 Saat (240 Dakika)</option>
+              <option value="0">8 Saat (480 Dakika)</option>
+              <option value="0">10 Saat (600 Dakika)</option>
+              <option value="0">12 Saat (720 Dakika)</option>
+              <option value="0">72 Saat (4320 Dakika)</option>
+            </select>
+    
+            <button class="btn btn-light btn-block w-75 mx-auto mt-2 buton1hover" type="button">Giriş - Login</button>
+    
+            <p class="w-75 mx-auto mt-4 mb-5 pb-2">Mail adresinizin sonuna <span class="text-danger">@uludag.edu.tr</span> yada
+              <span class="text-danger">@ogr.uludag.edu.tr</span> yazmayınız!</p>
+    
+          </div>
+        </div>
+      </div>
+      <div class="col-6 px-0">
+        <div class="border bg-secondary">
+          <h3 class="text-center text-light mb-4">ÇIKIŞ - LOGOUT</h3>
+          <div class="form-group">
+            <input type="text" id="email" class="form-control w-75 mx-auto mb-3" placeholder="e-mail kullanıcı adı">
+            <input type="password" id="password" class="form-control w-75 mx-auto mb-3" placeholder="şifre">
+    
+            <button id="cik" class="btn btn-light btn-block w-75 mx-auto mt-2" type="button">Çıkış - LogOut</button>
+    
+            <p class="w-75 mx-auto mt-4 bg-light p-3 rounded">Mail adresinizin sonuna <span
+                class="text-danger">@uludag.edu.tr</span> yada <span class="text-danger">@ogr.uludag.edu.tr</span>
+              yazmayınız!</p>
+    
+            <a href="#" class="text-light font-weight-bold w-75 mx-auto d-block mb-2">Personel Şifre Sıfırlama Talep
+              Formu</a>
+    
+            <a href="#" class="text-light font-weight-bold w-75 mx-auto d-block mb-5">Personel Kullanıcı Kodu Talep
+              Formu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-0">
+    <div class="card pt-5 pb-4 renk lead">
+      <div class="card-body container px-0">
+        Bilgi güvenliği konusundaki yasal zorunluluk ve Bilgi İşlem Daire Başkanlığı iç denetim sürecinin sonucu olarak,
+        Bursa Uludağ Üniversitesi ağı dışına olan internet çıkışları için siber güvenlik nedeniyle bilgisayarlarda
+        kimlik doğrulama sistemi devreye alınmıştır.<br><br>
+        Bu kapsamda binalardaki bilgisayarlardan internete bağlanmak için kişilerin e-mail kullanıcı adı ve şifrelerini
+        kullanmaları gerekmekte olup; personel için <span class="text-danger">@uludag.edu.tr</span> öğrenciler için
+        <span class="text-danger">@ogr.uludag.edu.tr</span> uzantılı resmi eposta hesabı ve şifresine sahip olmayan
+        kullanıcılar bu binalardan kampüs dışına internete çıkamayacaktır.<br><br>
+        <span class="text-danger">Oturum Açmak</span> veya <span class="text-danger">Oturum Sonlandırmak</span> için
+        lütfen yukarıdaki ilgili bölüme giriş yapınız.
+      </div>
+    </div>
+    <footer class="container px-0 text-dark text-start mt-5 mb-5 ">
+      © Bilgi İşlem Daire Başkanlığı - 2019 <span class="text-danger">Tasarım § Kodlama : Coşkun KAZANCI</span>
+    </footer>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
